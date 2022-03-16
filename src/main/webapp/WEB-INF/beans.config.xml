@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+	<context:annotation-config></context:annotation-config>
+	<context:component-scan base-package="com.product"></context:component-scan>
+	<context:component-scan base-package="com.order"></context:component-scan>
+	<context:component-scan base-package="com.member"></context:component-scan>
+	<context:component-scan base-package="com.admin"></context:component-scan>
+	
+	<tx:annotation-driven/>
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate5.HibernateTransactionManager">
+		<constructor-arg ref="sessionFactory"></constructor-arg>
+	</bean>
+
+
+
+	<bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource">
+		<constructor-arg>
+			<bean class="com.zaxxer.hikari.HikariConfig">
+				<property name="driverClassName"
+					value="com.mysql.cj.jdbc.Driver"></property>
+				<property name="jdbcUrl"
+					value="jdbc:mysql://localhost:3306/TFA105G1?serverTimezone=Asia/Taipei"></property>
+				<property name="username" value="root"></property>
+				<property name="password" value="password"></property>
+				<property name="dataSourceProperties">
+					<props>
+						<prop key="cachePrepStmts">true</prop>
+						<prop key="prepStmtCacheSize">250</prop>
+						<prop key="prepStmtCacheSqlLimit">2048</prop>
+					</props>
+				</property>
+			</bean>
+		</constructor-arg>
+	</bean>
+
+	
+	<bean id="sessionFactory" destroy-method="destroy"
+		class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+		<property name="dataSource" ref="dataSource"></property>
+		<property name="annotatedClasses">
+			<array>
+				<value>com.product.city.model.CityBean</value>
+				<value>com.product.product.model.ProductBean</value>
+				<value>com.product.productimg.model.ProductImgBean</value>
+				<value>com.product.productloc.model.ProductLocBean</value>
+				<value>com.product.productcomment.model.ProductCommentBean</value>
+				<value>com.order.order.model.OrderBean</value>
+				<value>com.order.orderdetail.model.OrderdetailBean</value>
+				<value>com.order.travelerlist.model.TravelerlistBean</value>
+				<value>com.order.order.model.memberupdate.MemberBean</value>
+				<value>com.admin.model.AdminVO</value>
+			</array>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>     
+        		<prop key="hibernate.show_sql">true</prop>
+<!--         		<prop key="hibernate.hbm2ddl.auto">validate</prop> -->
+        		<prop key="connection.datasource">java:comp/env/jdbc/tfa105g1</prop>
+			</props>
+		</property>
+	</bean>
+
+
+
+
+</beans>
