@@ -1,0 +1,89 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<aside class="menu-sidebar js-right-sidebar d-block d-lg-none">
+            <div class="logo"style="background-color: rgb(32, 69, 99)">
+                <a href="#">
+                    <img src="<%=request.getContextPath()%>/download/images/f.png" alt="Logo" />
+                </a>
+            </div>
+            <div class="menu-sidebar__content js-scrollbar2">
+                <!-- <div class="account-img">
+                    <img src="images/clients/reviewer-4.png" alt="Steve Austin" />
+                </div> -->
+                <!-- <h4 class="name">Howdy, Steve!</h4> -->
+                <nav class="navbar-sidebar2">
+                    <ul class="list-unstyled navbar__list">
+                        <li>
+                            <a class="active" href="db.html">
+                                <i class="ion-ios-gear-outline"></i>首頁公告
+                            </a>
+                        </li>
+                        <li>
+                            <a class="js-arrow" href="#">
+                                <i class="ion-social-buffer-outline"></i>訂單管理
+                            </a>
+                            <!-- <ul class="list-unstyled navbar__sub-list js-sub-list">
+                                <li>
+                                    <a href="db-my-listing.html">Active</a>
+                                    <span class="inbox-num active">6</span>
+                                </li>
+                                <li>
+                                    <a href="db-my-listing.html">Pending</a>
+                                    <span class="inbox-num pending">8</span>
+                                </li>
+                                <li>
+                                    <a href="db-my-listing.html">Expired</a>
+                                    <span class="inbox-num expired">12</span>
+                                </li>
+                            </ul> -->
+                        </li>
+
+                        <li>
+                            <a href="db-bookings.html">
+                                <i class="ion-ios-copy-outline"></i>行程總覽</a>
+                        </li>
+                        <li>
+                            <a href="<%=request.getContextPath()%>/download/BS-member_manage.jsp">
+                                <i class="ion-ios-person-outline"></i>會員管理</a>                            
+                        </li>
+
+                        <li>
+                            <a href="db-favourites.html">
+                                <i class="ion-ios-heart-outline"></i>admin管理</a>
+                        </li>
+                        <li>
+                            <a href="db-add-listing.html">
+                                <i class="ion-ios-plus-outline"></i>論壇管理</a>
+                        </li>
+                        <li>
+                            <a class="js-arrow" href="#">
+                                <i class="ion-ios-star-outline"></i>客服系統管理
+                            </a>
+                            <!-- <ul class="list-unstyled navbar__sub-list js-sub-list">
+                                <li>
+                                    <a href="db-recieve-reviews.html">
+                                        Recieved Reviews</a>
+                                    <span class="inbox-num active">6</span>
+                                </li>
+                                <li>
+                                    <a href="db-submit-reviews.html">
+                                        Submitted reviews</a>
+                                    <span class="inbox-num pending">8</span>
+                                </li>
+                            </ul> -->
+                        </li>
+                        <!-- <li>
+                            <a href="db-my-profile.html">
+                                <i class="ion-ios-person-outline"></i>My profile</a>
+                        </li>
+                        <li>
+                            <a href="db-invoices.html">
+                                <i class="ion-ios-printer-outline"></i>Invoices</a>
+                        </li> -->
+                        <li>
+                            <a href="#">
+                                <i class="ion-ios-upload-outline"></i>登出</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>

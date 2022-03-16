@@ -1,0 +1,37 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+		<aside class="menu-sidebar js-right-sidebar d-block d-lg-none">
+			<div class="logo"style="background-color: rgb(32, 69, 99)">
+                <a href="<%=request.getContextPath() %>/download/FS-Index-Demo.jsp">
+                    <img src="<%=request.getContextPath()%>/download/images/f.png" alt="Logo" />
+                </a>
+            </div>
+			<div class="menu-sidebar__content js-scrollbar2">
+				<div class="account-img">
+					<a href="<%=request.getContextPath()%>/download/FS-my-profile.jsp"><img
+						alt="${memberVO.memberid}"
+						src="<%=request.getContextPath()%>/member/member.pic?memberid=${memberVO.memberid}"
+						width="70px"></a>
+				</div>
+				<h4 class="name">Hello, ${memberVO.lastname}
+					${memberVO.firstname}</h4>
+				<nav class="navbar-sidebar2">
+					<ul class="list-unstyled navbar__list">
+						<li><a href="db-my-profile.jsp"> <i
+								class="ion-ios-person-outline"></i>個人檔案
+						</a></li>
+						<li><a href="#1"> <i class="ion-ios-heart-outline"></i>我的收藏
+						</a></li>
+						<li><a href="#4"> <i class="ion-ios-cart-outline"></i>購物車
+						</a></li>
+						<li><a href="#2"> <i class="ion-ios-printer-outline"></i>訂單管理
+						</a></li>
+						<li><a href="#3"> <i class="ion-ios-gear-outline"></i>修改密碼
+						</a></li>
+						<li><a
+							href="<%=request.getContextPath()%>/member/member.login?action=logout">
+								<i class="ion-ios-upload-outline"></i>Logout
+						</a></li>
+					</ul>
+				</nav>
+			</div>
+		</aside>
