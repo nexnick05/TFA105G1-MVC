@@ -1,0 +1,492 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<select class="w-81" id="xcountry" name="country">
+        <option value="">請選擇國家</option>
+        <option value="安道爾" ${memberVO.country=="安道爾" ? 'selected="selected"' : '' }>[AD]
+            安道爾</option>
+        <option value="阿拉伯聯合大公國" ${memberVO.country=="阿拉伯聯合大公國" ? 'selected="selected"' : '' }>[AE]
+            阿拉伯聯合大公國</option>
+        <option value="阿富汗" ${memberVO.country=="阿富汗" ? 'selected="selected"' : '' }>[AF]
+            阿富汗</option>
+        <option value="安地卡巴布達" ${memberVO.country=="安地卡巴布達" ? 'selected="selected"' : '' }>[AG]
+            安地卡巴布達</option>
+        <option value="安圭拉" ${memberVO.country=="安圭拉" ? 'selected="selected"' : '' }>[AI]
+            安圭拉</option>
+        <option value="阿爾巴尼亞" ${memberVO.country=="阿爾巴尼亞" ? 'selected="selected"' : '' }>[AL]
+            阿爾巴尼亞</option>
+        <option value="亞美尼亞" ${memberVO.country=="亞美尼亞" ? 'selected="selected"' : '' }>[AM]
+            亞美尼亞</option>
+        <option value="荷屬安地列斯" ${memberVO.country=="荷屬安地列斯" ? 'selected="selected"' : '' }>[AN]
+            荷屬安地列斯</option>
+        <option value="安哥拉" ${memberVO.country=="安哥拉" ? 'selected="selected"' : '' }>[AO]
+            安哥拉</option>
+        <option value="南極洲" ${memberVO.country=="南極洲" ? 'selected="selected"' : '' }>[AQ]
+            南極洲</option>
+        <option value="阿根廷" ${memberVO.country=="阿根廷" ? 'selected="selected"' : '' }>[AR]
+            阿根廷</option>
+        <option value="美屬薩摩亞" ${memberVO.country=="美屬薩摩亞" ? 'selected="selected"' : '' }>[AS]
+            美屬薩摩亞</option>
+        <option value="奧地利" ${memberVO.country=="奧地利" ? 'selected="selected"' : '' }>[AT]
+            奧地利</option>
+        <option value="澳大利亞" ${memberVO.country=="澳大利亞" ? 'selected="selected"' : '' }>[AU]
+            澳大利亞</option>
+        <option value="阿魯巴" ${memberVO.country=="阿魯巴" ? 'selected="selected"' : '' }>[AW]
+            阿魯巴</option>
+        <option value="奧蘭群島" ${memberVO.country=="奧蘭群島" ? 'selected="selected"' : '' }>[AX]
+            奧蘭群島</option>
+        <option value="亞塞拜然" ${memberVO.country=="亞塞拜然" ? 'selected="selected"' : '' }>[AZ]
+            亞塞拜然</option>
+        <option value="波士尼亞赫塞哥維納" ${memberVO.country=="波士尼亞赫塞哥維納" ? 'selected="selected"' : '' }>[BA]
+            波士尼亞赫塞哥維納</option>
+        <option value="巴貝多" ${memberVO.country=="巴貝多" ? 'selected="selected"' : '' }>[BB]
+            巴貝多</option>
+        <option value="孟加拉" ${memberVO.country=="孟加拉" ? 'selected="selected"' : '' }>[BD]
+            孟加拉</option>
+        <option value="比利時" ${memberVO.country=="比利時" ? 'selected="selected"' : '' }>[BE]
+            比利時</option>
+        <option value="布吉納法索" ${memberVO.country=="布吉納法索" ? 'selected="selected"' : '' }>[BF]
+            布吉納法索</option>
+        <option value="保加利亞" ${memberVO.country=="保加利亞" ? 'selected="selected"' : '' }>[BG]
+            保加利亞</option>
+        <option value="巴林" ${memberVO.country=="巴林" ? 'selected="selected"' : '' }>[BH]
+            巴林</option>
+        <option value="蒲隆地" ${memberVO.country=="蒲隆地" ? 'selected="selected"' : '' }>[BI]
+            蒲隆地</option>
+        <option value="貝南" ${memberVO.country=="貝南" ? 'selected="selected"' : '' }>[BJ]
+            貝南</option>
+        <option value="百慕達" ${memberVO.country=="百慕達" ? 'selected="selected"' : '' }>[BM]
+            百慕達</option>
+        <option value="汶萊" ${memberVO.country=="汶萊" ? 'selected="selected"' : '' }>[BN]
+            汶萊</option>
+        <option value="玻利維亞" ${memberVO.country=="玻利維亞" ? 'selected="selected"' : '' }>[BO]
+            玻利維亞</option>
+        <option value="巴西" ${memberVO.country=="巴西" ? 'selected="selected"' : '' }>[BR]
+            巴西</option>
+        <option value="巴哈馬" ${memberVO.country=="巴哈馬" ? 'selected="selected"' : '' }>[BS]
+            巴哈馬</option>
+        <option value="不丹" ${memberVO.country=="不丹" ? 'selected="selected"' : '' }>[BT]
+            不丹</option>
+        <option value="波維特島" ${memberVO.country=="波維特島" ? 'selected="selected"' : '' }>[BV]
+            波維特島</option>
+        <option value="波札那" ${memberVO.country=="波札那" ? 'selected="selected"' : '' }>[BW]
+            波札那</option>
+        <option value="白俄羅斯" ${memberVO.country=="白俄羅斯" ? 'selected="selected"' : '' }>[BY]
+            白俄羅斯</option>
+        <option value="貝里斯" ${memberVO.country=="貝里斯" ? 'selected="selected"' : '' }>[BZ]
+            貝里斯</option>
+        <option value="加拿大" ${memberVO.country=="加拿大" ? 'selected="selected"' : '' }>[CA]
+            加拿大</option>
+        <option value="可可斯群島" ${memberVO.country=="可可斯群島" ? 'selected="selected"' : '' }>[CC]
+            可可斯群島</option>
+        <option value="剛果民主共和國" ${memberVO.country=="剛果民主共和國" ? 'selected="selected"' : '' }>[CD]
+            剛果民主共和國</option>
+        <option value="中非共和國" ${memberVO.country=="中非共和國" ? 'selected="selected"' : '' }>[CF]
+            中非共和國</option>
+        <option value="剛果" ${memberVO.country=="剛果" ? 'selected="selected"' : '' }>[CG]
+            剛果</option>
+        <option value="瑞士" ${memberVO.country=="瑞士" ? 'selected="selected"' : '' }>[CH]
+            瑞士</option>
+        <option value="象牙海岸" ${memberVO.country=="象牙海岸" ? 'selected="selected"' : '' }>[CI]
+            象牙海岸</option>
+        <option value="庫克群島" ${memberVO.country=="庫克群島" ? 'selected="selected"' : '' }>[CK]
+            庫克群島</option>
+        <option value="智利" ${memberVO.country=="智利" ? 'selected="selected"' : '' }>[CL]
+            智利</option>
+        <option value="喀麥隆" ${memberVO.country=="喀麥隆" ? 'selected="selected"' : '' }>[CM]
+            喀麥隆</option>
+        <option value="中國" ${memberVO.country=="中國" ? 'selected="selected"' : '' }>[CN]
+            中國</option>
+        <option value="哥倫比亞" ${memberVO.country=="哥倫比亞" ? 'selected="selected"' : '' }>[CO]
+            哥倫比亞</option>
+        <option value="哥斯大黎加" ${memberVO.country=="哥斯大黎加" ? 'selected="selected"' : '' }>[CR]
+            哥斯大黎加</option>
+        <option value="古巴" ${memberVO.country=="古巴" ? 'selected="selected"' : '' }>[CU]
+            古巴</option>
+        <option value="維德角" ${memberVO.country=="維德角" ? 'selected="selected"' : '' }>[CV]
+            維德角</option>
+        <option value="聖誕島" ${memberVO.country=="聖誕島" ? 'selected="selected"' : '' }>[CX]
+            聖誕島</option>
+        <option value="賽普勒斯" ${memberVO.country=="賽普勒斯" ? 'selected="selected"' : '' }>[CY]
+            賽普勒斯</option>
+        <option value="捷克" ${memberVO.country=="捷克" ? 'selected="selected"' : '' }>[CZ]
+            捷克</option>
+        <option value="德國" ${memberVO.country=="德國" ? 'selected="selected"' : '' }>[DE]
+            德國</option>
+        <option value="吉布地" ${memberVO.country=="吉布地" ? 'selected="selected"' : '' }>[DJ]
+            吉布地</option>
+        <option value="丹麥" ${memberVO.country=="丹麥" ? 'selected="selected"' : '' }>[DK]
+            丹麥</option>
+        <option value="多米尼克" ${memberVO.country=="多米尼克" ? 'selected="selected"' : '' }>[DM]
+            多米尼克</option>
+        <option value="多明尼加" ${memberVO.country=="多明尼加" ? 'selected="selected"' : '' }>[DO]
+            多明尼加</option>
+        <option value="阿爾及利亞" ${memberVO.country=="阿爾及利亞" ? 'selected="selected"' : '' }>[DZ]
+            阿爾及利亞</option>
+        <option value="厄瓜多" ${memberVO.country=="厄瓜多" ? 'selected="selected"' : '' }>[EC]
+            厄瓜多</option>
+        <option value="愛沙尼亞" ${memberVO.country=="愛沙尼亞" ? 'selected="selected"' : '' }>[EE]
+            愛沙尼亞</option>
+        <option value="埃及" ${memberVO.country=="埃及" ? 'selected="selected"' : '' }>[EG]
+            埃及</option>
+        <option value="西撒哈拉" ${memberVO.country=="西撒哈拉" ? 'selected="selected"' : '' }>[EH]
+            西撒哈拉</option>
+        <option value="厄利垂亞" ${memberVO.country=="厄利垂亞" ? 'selected="selected"' : '' }>[ER]
+            厄利垂亞</option>
+        <option value="西班牙" ${memberVO.country=="西班牙" ? 'selected="selected"' : '' }>[ES]
+            西班牙</option>
+        <option value="衣索比亞" ${memberVO.country=="衣索比亞" ? 'selected="selected"' : '' }>[ET]
+            衣索比亞</option>
+        <option value="芬蘭" ${memberVO.country=="芬蘭" ? 'selected="selected"' : '' }>[FI]
+            芬蘭</option>
+        <option value="斐濟" ${memberVO.country=="斐濟" ? 'selected="selected"' : '' }>[FJ]
+            斐濟</option>
+        <option value="福克蘭群島" ${memberVO.country=="福克蘭群島" ? 'selected="selected"' : '' }>[FK]
+            福克蘭群島</option>
+        <option value="密克羅尼西亞聯邦" ${memberVO.country=="密克羅尼西亞聯邦" ? 'selected="selected"' : '' }>[FM]
+            密克羅尼西亞聯邦</option>
+        <option value="法羅群島" ${memberVO.country=="法羅群島" ? 'selected="selected"' : '' }>[FO]
+            法羅群島</option>
+        <option value="法國" ${memberVO.country=="法國" ? 'selected="selected"' : '' }>[FR]
+            法國</option>
+        <option value="加彭" ${memberVO.country=="加彭" ? 'selected="selected"' : '' }>[GA]
+            加彭</option>
+        <option value="英國" ${memberVO.country=="英國" ? 'selected="selected"' : '' }>[GB]
+            英國</option>
+        <option value="格瑞那達" ${memberVO.country=="格瑞那達" ? 'selected="selected"' : '' }>[GD]
+            格瑞那達</option>
+        <option value="喬治亞" ${memberVO.country=="喬治亞" ? 'selected="selected"' : '' }>[GE]
+            喬治亞</option>
+        <option value="法屬圭亞那" ${memberVO.country=="法屬圭亞那" ? 'selected="selected"' : '' }>[GF]
+            法屬圭亞那</option>
+        <option value="根息" ${memberVO.country=="根息" ? 'selected="selected"' : '' }>[GG]
+            根息</option>
+        <option value="迦納" ${memberVO.country=="迦納" ? 'selected="selected"' : '' }>[GH]
+            迦納</option>
+        <option value="直布羅陀" ${memberVO.country=="直布羅陀" ? 'selected="selected"' : '' }>[GI]
+            直布羅陀</option>
+        <option value="格陵蘭" ${memberVO.country=="格陵蘭" ? 'selected="selected"' : '' }>[GL]
+            格陵蘭</option>
+        <option value="甘比亞" ${memberVO.country=="甘比亞" ? 'selected="selected"' : '' }>[GM]
+            甘比亞</option>
+        <option value="幾內亞" ${memberVO.country=="幾內亞" ? 'selected="selected"' : '' }>[GN]
+            幾內亞</option>
+        <option value="哥德洛普" ${memberVO.country=="哥德洛普" ? 'selected="selected"' : '' }>[GP]
+            哥德洛普</option>
+        <option value="赤道幾內亞" ${memberVO.country=="赤道幾內亞" ? 'selected="selected"' : '' }>[GQ]
+            赤道幾內亞</option>
+        <option value="希臘" ${memberVO.country=="希臘" ? 'selected="selected"' : '' }>[GR]
+            希臘</option>
+        <option value="南喬治亞南桑威奇群島" ${memberVO.country=="南喬治亞南桑威奇群島" ? 'selected="selected"' : '' }>[GS]
+            南喬治亞南桑威奇群島</option>
+        <option value="瓜地馬拉" ${memberVO.country=="瓜地馬拉" ? 'selected="selected"' : '' }>[GT]
+            瓜地馬拉</option>
+        <option value="關島" ${memberVO.country=="關島" ? 'selected="selected"' : '' }>[GU]
+            關島</option>
+        <option value="幾內亞比索" ${memberVO.country=="幾內亞比索" ? 'selected="selected"' : '' }>[GW]
+            幾內亞比索</option>
+        <option value="蓋亞那" ${memberVO.country=="蓋亞那" ? 'selected="selected"' : '' }>[GY]
+            蓋亞那</option>
+        <option value="香港" ${memberVO.country=="香港" ? 'selected="selected"' : '' }>[HK]
+            香港</option>
+        <option value="赫德麥當勞群島" ${memberVO.country=="赫德麥當勞群島" ? 'selected="selected"' : '' }>[HM]
+            赫德麥當勞群島</option>
+        <option value="宏都拉斯" ${memberVO.country=="宏都拉斯" ? 'selected="selected"' : '' }>[HN]
+            宏都拉斯</option>
+        <option value="克羅埃西亞" ${memberVO.country=="克羅埃西亞" ? 'selected="selected"' : '' }>[HR]
+            克羅埃西亞</option>
+        <option value="海地" ${memberVO.country=="海地" ? 'selected="selected"' : '' }>[HT]
+            海地</option>
+        <option value="匈牙利" ${memberVO.country=="匈牙利" ? 'selected="selected"' : '' }>[HU]
+            匈牙利</option>
+        <option value="印尼" ${memberVO.country=="印尼" ? 'selected="selected"' : '' }>[ID]
+            印尼</option>
+        <option value="愛爾蘭" ${memberVO.country=="愛爾蘭" ? 'selected="selected"' : '' }>[IE]
+            愛爾蘭</option>
+        <option value="以色列" ${memberVO.country=="以色列" ? 'selected="selected"' : '' }>[IL]
+            以色列</option>
+        <option value="曼島" ${memberVO.country=="曼島" ? 'selected="selected"' : '' }>[IM]
+            曼島</option>
+        <option value="印度" ${memberVO.country=="印度" ? 'selected="selected"' : '' }>[IN]
+            印度</option>
+        <option value="英屬印度洋地區" ${memberVO.country=="英屬印度洋地區" ? 'selected="selected"' : '' }>[IO]
+            英屬印度洋地區</option>
+        <option value="伊拉克" ${memberVO.country=="伊拉克" ? 'selected="selected"' : '' }>[IQ]
+            伊拉克</option>
+        <option value="伊朗" ${memberVO.country=="伊朗" ? 'selected="selected"' : '' }>[IR]
+            伊朗</option>
+        <option value="冰島" ${memberVO.country=="冰島" ? 'selected="selected"' : '' }>[IS]
+            冰島</option>
+        <option value="義大利" ${memberVO.country=="義大利" ? 'selected="selected"' : '' }>[IT]
+            義大利</option>
+        <option value="澤西" ${memberVO.country=="澤西" ? 'selected="selected"' : '' }>[JE]
+            澤西</option>
+        <option value="牙買加" ${memberVO.country=="牙買加" ? 'selected="selected"' : '' }>[JM]
+            牙買加</option>
+        <option value="約旦" ${memberVO.country=="約旦" ? 'selected="selected"' : '' }>[JO]
+            約旦</option>
+        <option value="日本" ${memberVO.country=="日本" ? 'selected="selected"' : '' }>[JP]
+            日本</option>
+        <option value="肯亞" ${memberVO.country=="肯亞" ? 'selected="selected"' : '' }>[KE]
+            肯亞</option>
+        <option value="吉爾吉斯" ${memberVO.country=="吉爾吉斯" ? 'selected="selected"' : '' }>[KG]
+            吉爾吉斯</option>
+        <option value="柬埔寨" ${memberVO.country=="柬埔寨" ? 'selected="selected"' : '' }>[KH]
+            柬埔寨</option>
+        <option value="吉里巴斯" ${memberVO.country=="吉里巴斯" ? 'selected="selected"' : '' }>[KI]
+            吉里巴斯</option>
+        <option value="葛摩" ${memberVO.country=="葛摩" ? 'selected="selected"' : '' }>[KM]
+            葛摩</option>
+        <option value="聖克里斯多福" ${memberVO.country=="聖克里斯多福" ? 'selected="selected"' : '' }>[KN]
+            聖克里斯多福</option>
+        <option value="北韓" ${memberVO.country=="北韓" ? 'selected="selected"' : '' }>[KP]
+            北韓</option>
+        <option value="南韓" ${memberVO.country=="南韓" ? 'selected="selected"' : '' }>[KR]
+            南韓</option>
+        <option value="科威特" ${memberVO.country=="科威特" ? 'selected="selected"' : '' }>[KW]
+            科威特</option>
+        <option value="開曼群島" ${memberVO.country=="開曼群島" ? 'selected="selected"' : '' }>[KY]
+            開曼群島</option>
+        <option value="哈薩克" ${memberVO.country=="哈薩克" ? 'selected="selected"' : '' }>[KZ]
+            哈薩克</option>
+        <option value="寮國" ${memberVO.country=="寮國" ? 'selected="selected"' : '' }>[LA]
+            寮國</option>
+        <option value="黎巴嫩" ${memberVO.country=="黎巴嫩" ? 'selected="selected"' : '' }>[LB]
+            黎巴嫩</option>
+        <option value="聖露西亞" ${memberVO.country=="聖露西亞" ? 'selected="selected"' : '' }>[LC]
+            聖露西亞</option>
+        <option value="列支敦斯登" ${memberVO.country=="列支敦斯登" ? 'selected="selected"' : '' }>[LI]
+            列支敦斯登</option>
+        <option value="斯里蘭卡" ${memberVO.country=="斯里蘭卡" ? 'selected="selected"' : '' }>[LK]
+            斯里蘭卡</option>
+        <option value="賴比瑞亞" ${memberVO.country=="賴比瑞亞" ? 'selected="selected"' : '' }>[LR]
+            賴比瑞亞</option>
+        <option value="賴索托" ${memberVO.country=="賴索托" ? 'selected="selected"' : '' }>[LS]
+            賴索托</option>
+        <option value="立陶宛" ${memberVO.country=="立陶宛" ? 'selected="selected"' : '' }>[LT]
+            立陶宛</option>
+        <option value="盧森堡" ${memberVO.country=="盧森堡" ? 'selected="selected"' : '' }>[LU]
+            盧森堡</option>
+        <option value="拉脫維亞" ${memberVO.country=="拉脫維亞" ? 'selected="selected"' : '' }>[LV]
+            拉脫維亞</option>
+        <option value="利比亞" ${memberVO.country=="利比亞" ? 'selected="selected"' : '' }>[LY]
+            利比亞</option>
+        <option value="摩洛哥" ${memberVO.country=="摩洛哥" ? 'selected="selected"' : '' }>[MA]
+            摩洛哥</option>
+        <option value="摩納哥" ${memberVO.country=="摩納哥" ? 'selected="selected"' : '' }>[MC]
+            摩納哥</option>
+        <option value="摩爾多瓦" ${memberVO.country=="摩爾多瓦" ? 'selected="selected"' : '' }>[MD]
+            摩爾多瓦</option>
+        <option value="蒙特內哥羅" ${memberVO.country=="蒙特內哥羅" ? 'selected="selected"' : '' }>[ME]
+            蒙特內哥羅</option>
+        <option value="馬達加斯加" ${memberVO.country=="馬達加斯加" ? 'selected="selected"' : '' }>[MG]
+            馬達加斯加</option>
+        <option value="馬紹爾群島" ${memberVO.country=="馬紹爾群島" ? 'selected="selected"' : '' }>[MH]
+            馬紹爾群島</option>
+        <option value="馬其頓" ${memberVO.country=="馬其頓" ? 'selected="selected"' : '' }>[MK]
+            馬其頓</option>
+        <option value="馬利" ${memberVO.country=="馬利" ? 'selected="selected"' : '' }>[ML]
+            馬利</option>
+        <option value="緬甸" ${memberVO.country=="緬甸" ? 'selected="selected"' : '' }>[MM]
+            緬甸</option>
+        <option value="蒙古" ${memberVO.country=="蒙古" ? 'selected="selected"' : '' }>[MN]
+            蒙古</option>
+        <option value="澳門" ${memberVO.country=="澳門" ? 'selected="selected"' : '' }>[MO]
+            澳門</option>
+        <option value="北馬里亞納群島" ${memberVO.country=="北馬里亞納群島" ? 'selected="selected"' : '' }>[MP]
+            北馬里亞納群島</option>
+        <option value="馬丁尼克" ${memberVO.country=="馬丁尼克" ? 'selected="selected"' : '' }>[MQ]
+            馬丁尼克</option>
+        <option value="茅利塔尼亞" ${memberVO.country=="茅利塔尼亞" ? 'selected="selected"' : '' }>[MR]
+            茅利塔尼亞</option>
+        <option value="蒙特色拉" ${memberVO.country=="蒙特色拉" ? 'selected="selected"' : '' }>[MS]
+            蒙特色拉</option>
+        <option value="馬爾他" ${memberVO.country=="馬爾他" ? 'selected="selected"' : '' }>[MT]
+            馬爾他</option>
+        <option value="模里西斯" ${memberVO.country=="模里西斯" ? 'selected="selected"' : '' }>[MU]
+            模里西斯</option>
+        <option value="馬爾地夫" ${memberVO.country=="馬爾地夫" ? 'selected="selected"' : '' }>[MV]
+            馬爾地夫</option>
+        <option value="馬拉威" ${memberVO.country=="馬拉威" ? 'selected="selected"' : '' }>[MW]
+            馬拉威</option>
+        <option value="墨西哥" ${memberVO.country=="墨西哥" ? 'selected="selected"' : '' }>[MX]
+            墨西哥</option>
+        <option value="馬來西亞" ${memberVO.country=="馬來西亞" ? 'selected="selected"' : '' }>[MY]
+            馬來西亞</option>
+        <option value="莫三比克" ${memberVO.country=="莫三比克" ? 'selected="selected"' : '' }>[MZ]
+            莫三比克</option>
+        <option value="納米比亞" ${memberVO.country=="納米比亞" ? 'selected="selected"' : '' }>[NA]
+            納米比亞</option>
+        <option value="新喀里多尼亞" ${memberVO.country=="新喀里多尼亞" ? 'selected="selected"' : '' }>[NC]
+            新喀里多尼亞</option>
+        <option value="尼日" ${memberVO.country=="尼日" ? 'selected="selected"' : '' }>[NE]
+            尼日</option>
+        <option value="諾福克島" ${memberVO.country=="諾福克島" ? 'selected="selected"' : '' }>[NF]
+            諾福克島</option>
+        <option value="奈及利亞" ${memberVO.country=="奈及利亞" ? 'selected="selected"' : '' }>[NG]
+            奈及利亞</option>
+        <option value="尼加拉瓜" ${memberVO.country=="尼加拉瓜" ? 'selected="selected"' : '' }>[NI]
+            尼加拉瓜</option>
+        <option value="荷蘭" ${memberVO.country=="荷蘭" ? 'selected="selected"' : '' }>[NL]
+            荷蘭</option>
+        <option value="挪威" ${memberVO.country=="挪威" ? 'selected="selected"' : '' }>[NO]
+            挪威</option>
+        <option value="尼泊爾" ${memberVO.country=="尼泊爾" ? 'selected="selected"' : '' }>[NP]
+            尼泊爾</option>
+        <option value="諾魯" ${memberVO.country=="諾魯" ? 'selected="selected"' : '' }>[NR]
+            諾魯</option>
+        <option value="紐埃" ${memberVO.country=="紐埃" ? 'selected="selected"' : '' }>[NU]
+            紐埃</option>
+        <option value="紐西蘭" ${memberVO.country=="紐西蘭" ? 'selected="selected"' : '' }>[NZ]
+            紐西蘭</option>
+        <option value="阿曼" ${memberVO.country=="阿曼" ? 'selected="selected"' : '' }>[OM]
+            阿曼</option>
+        <option value="巴拿馬" ${memberVO.country=="巴拿馬" ? 'selected="selected"' : '' }>[PA]
+            巴拿馬</option>
+        <option value="秘魯" ${memberVO.country=="秘魯" ? 'selected="selected"' : '' }>[PE]
+            秘魯</option>
+        <option value="法屬波里尼西亞" ${memberVO.country=="法屬波里尼西亞" ? 'selected="selected"' : '' }>[PF]
+            法屬波里尼西亞</option>
+        <option value="巴布亞紐幾內亞" ${memberVO.country=="巴布亞紐幾內亞" ? 'selected="selected"' : '' }>[PG]
+            巴布亞紐幾內亞</option>
+        <option value="菲律賓" ${memberVO.country=="菲律賓" ? 'selected="selected"' : '' }>[PH]
+            菲律賓</option>
+        <option value="巴基斯坦" ${memberVO.country=="巴基斯坦" ? 'selected="selected"' : '' }>[PK]
+            巴基斯坦</option>
+        <option value="波蘭" ${memberVO.country=="波蘭" ? 'selected="selected"' : '' }>[PL]
+            波蘭</option>
+        <option value="聖皮耶密克隆" ${memberVO.country=="聖皮耶密克隆" ? 'selected="selected"' : '' }>[PM]
+            聖皮耶密克隆</option>
+        <option value="皮特康" ${memberVO.country=="皮特康" ? 'selected="selected"' : '' }>[PN]
+            皮特康</option>
+        <option value="波多黎各" ${memberVO.country=="波多黎各" ? 'selected="selected"' : '' }>[PR]
+            波多黎各</option>
+        <option value="巴勒斯坦" ${memberVO.country=="巴勒斯坦" ? 'selected="selected"' : '' }>[PS]
+            巴勒斯坦</option>
+        <option value="葡萄牙" ${memberVO.country=="葡萄牙" ? 'selected="selected"' : '' }>[PT]
+            葡萄牙</option>
+        <option value="帛琉" ${memberVO.country=="帛琉" ? 'selected="selected"' : '' }>[PW]
+            帛琉</option>
+        <option value="巴拉圭" ${memberVO.country=="巴拉圭" ? 'selected="selected"' : '' }>[PY]
+            巴拉圭</option>
+        <option value="卡達" ${memberVO.country=="卡達" ? 'selected="selected"' : '' }>[QA]
+            卡達</option>
+        <option value="留尼旺" ${memberVO.country=="留尼旺" ? 'selected="selected"' : '' }>[RE]
+            留尼旺</option>
+        <option value="羅馬尼亞" ${memberVO.country=="羅馬尼亞" ? 'selected="selected"' : '' }>[RO]
+            羅馬尼亞</option>
+        <option value="塞爾維亞" ${memberVO.country=="塞爾維亞" ? 'selected="selected"' : '' }>[RS]
+            塞爾維亞</option>
+        <option value="俄羅斯" ${memberVO.country=="俄羅斯" ? 'selected="selected"' : '' }>[RU]
+            俄羅斯</option>
+        <option value="盧安達" ${memberVO.country=="盧安達" ? 'selected="selected"' : '' }>[RW]
+            盧安達</option>
+        <option value="沙烏地阿拉伯" ${memberVO.country=="沙烏地阿拉伯" ? 'selected="selected"' : '' }>[SA]
+            沙烏地阿拉伯</option>
+        <option value="索羅門群島" ${memberVO.country=="索羅門群島" ? 'selected="selected"' : '' }>[SB]
+            索羅門群島</option>
+        <option value="塞席爾" ${memberVO.country=="塞席爾" ? 'selected="selected"' : '' }>[SC]
+            塞席爾</option>
+        <option value="蘇丹" ${memberVO.country=="蘇丹" ? 'selected="selected"' : '' }>[SD]
+            蘇丹</option>
+        <option value="瑞典" ${memberVO.country=="瑞典" ? 'selected="selected"' : '' }>[SE]
+            瑞典</option>
+        <option value="新加坡" ${memberVO.country=="新加坡" ? 'selected="selected"' : '' }>[SG]
+            新加坡</option>
+        <option value="聖赫勒拿" ${memberVO.country=="聖赫勒拿" ? 'selected="selected"' : '' }>[SH]
+            聖赫勒拿</option>
+        <option value="斯洛維尼亞" ${memberVO.country=="斯洛維尼亞" ? 'selected="selected"' : '' }>[SI]
+            斯洛維尼亞</option>
+        <option value="斯瓦爾巴尖棉" ${memberVO.country=="斯瓦爾巴尖棉" ? 'selected="selected"' : '' }>[SJ]
+            斯瓦爾巴尖棉</option>
+        <option value="斯洛伐克" ${memberVO.country=="斯洛伐克" ? 'selected="selected"' : '' }>[SK]
+            斯洛伐克</option>
+        <option value="獅子山" ${memberVO.country=="獅子山" ? 'selected="selected"' : '' }>[SL]
+            獅子山</option>
+        <option value="聖馬利諾" ${memberVO.country=="聖馬利諾" ? 'selected="selected"' : '' }>[SM]
+            聖馬利諾</option>
+        <option value="塞內加爾" ${memberVO.country=="塞內加爾" ? 'selected="selected"' : '' }>[SN]
+            塞內加爾</option>
+        <option value="索馬利亞" ${memberVO.country=="索馬利亞" ? 'selected="selected"' : '' }>[SO]
+            索馬利亞</option>
+        <option value="蘇利南" ${memberVO.country=="蘇利南" ? 'selected="selected"' : '' }>[SR]
+            蘇利南</option>
+        <option value="聖多美普林西比" ${memberVO.country=="聖多美普林西比" ? 'selected="selected"' : '' }>[ST]
+            聖多美普林西比</option>
+        <option value="薩爾瓦多" ${memberVO.country=="薩爾瓦多" ? 'selected="selected"' : '' }>[SV]
+            薩爾瓦多</option>
+        <option value="敘利亞" ${memberVO.country=="敘利亞" ? 'selected="selected"' : '' }>[SY]
+            敘利亞</option>
+        <option value="史瓦濟蘭" ${memberVO.country=="史瓦濟蘭" ? 'selected="selected"' : '' }>[SZ]
+            史瓦濟蘭</option>
+        <option value="托克斯寇克斯群島" ${memberVO.country=="托克斯寇克斯群島" ? 'selected="selected"' : '' }>[TC]
+            托克斯寇克斯群島</option>
+        <option value="查德" ${memberVO.country=="查德" ? 'selected="selected"' : '' }>[TD]
+            查德</option>
+        <option value="法屬南部屬地" ${memberVO.country=="法屬南部屬地" ? 'selected="selected"' : '' }>[TF]
+            法屬南部屬地</option>
+        <option value="多哥" ${memberVO.country=="多哥" ? 'selected="selected"' : '' }>[TG]
+            多哥</option>
+        <option value="泰國" ${memberVO.country=="泰國" ? 'selected="selected"' : '' }>[TH]
+            泰國</option>
+        <option value="塔吉克" ${memberVO.country=="塔吉克" ? 'selected="selected"' : '' }>[TJ]
+            塔吉克</option>
+        <option value="托克勞" ${memberVO.country=="托克勞" ? 'selected="selected"' : '' }>[TK]
+            托克勞</option>
+        <option value="東帝汶" ${memberVO.country=="東帝汶" ? 'selected="selected"' : '' }>[TL]
+            東帝汶</option>
+        <option value="土庫曼" ${memberVO.country=="土庫曼" ? 'selected="selected"' : '' }>[TM]
+            土庫曼</option>
+        <option value="突尼西亞" ${memberVO.country=="突尼西亞" ? 'selected="selected"' : '' }>[TN]
+            突尼西亞</option>
+        <option value="東加" ${memberVO.country=="東加" ? 'selected="selected"' : '' }>[TO]
+            東加</option>
+        <option value="土耳其" ${memberVO.country=="土耳其" ? 'selected="selected"' : '' }>[TR]
+            土耳其</option>
+        <option value="千里達托貝哥" ${memberVO.country=="千里達托貝哥" ? 'selected="selected"' : '' }>[TT]
+            千里達托貝哥</option>
+        <option value="吐瓦魯" ${memberVO.country=="吐瓦魯" ? 'selected="selected"' : '' }>[TV]
+            吐瓦魯</option>
+        <option value="台灣" ${memberVO.country=="台灣" ? 'selected="selected"' : '' }>[TW]
+            台灣</option>
+        <option value="坦尚尼亞" ${memberVO.country=="坦尚尼亞" ? 'selected="selected"' : '' }>[TZ]
+            坦尚尼亞</option>
+        <option value="烏克蘭" ${memberVO.country=="烏克蘭" ? 'selected="selected"' : '' }>[UA]
+            烏克蘭</option>
+        <option value="烏干達" ${memberVO.country=="烏干達" ? 'selected="selected"' : '' }>[UG]
+            烏干達</option>
+        <option value="美屬邊疆群島" ${memberVO.country=="美屬邊疆群島" ? 'selected="selected"' : '' }>[UM]
+            美屬邊疆群島</option>
+        <option value="美國" ${memberVO.country=="美國" ? 'selected="selected"' : '' }>[US]
+            美國</option>
+        <option value="烏拉圭" ${memberVO.country=="烏拉圭" ? 'selected="selected"' : '' }>[UY]
+            烏拉圭</option>
+        <option value="烏茲別克" ${memberVO.country=="烏茲別克" ? 'selected="selected"' : '' }>[UZ]
+            烏茲別克</option>
+        <option value="教廷(梵蒂岡)" ${memberVO.country=="教廷(梵蒂岡)" ? 'selected="selected"' : '' }>[VA]
+            教廷(梵蒂岡)</option>
+        <option value="聖文森" ${memberVO.country=="聖文森" ? 'selected="selected"' : '' }>[VC]
+            聖文森</option>
+        <option value="委內瑞拉" ${memberVO.country=="委內瑞拉" ? 'selected="selected"' : '' }>[VE]
+            委內瑞拉</option>
+        <option value="英屬維爾京群島" ${memberVO.country=="英屬維爾京群島" ? 'selected="selected"' : '' }>[VG]
+            英屬維爾京群島</option>
+        <option value="美屬維京群島" ${memberVO.country=="美屬維京群島" ? 'selected="selected"' : '' }>[VI]
+            美屬維京群島</option>
+        <option value="越南" ${memberVO.country=="越南" ? 'selected="selected"' : '' }>[VN]
+            越南</option>
+        <option value="萬那杜" ${memberVO.country=="萬那杜" ? 'selected="selected"' : '' }>[VU]
+            萬那杜</option>
+        <option value="華里斯福他納" ${memberVO.country=="華里斯福他納" ? 'selected="selected"' : '' }>[WF]
+            華里斯福他納</option>
+        <option value="薩摩亞" ${memberVO.country=="薩摩亞" ? 'selected="selected"' : '' }>[WS]
+            薩摩亞</option>
+        <option value="葉門" ${memberVO.country=="葉門" ? 'selected="selected"' : '' }>[YE]
+            葉門</option>
+        <option value="美亞特" ${memberVO.country=="美亞特" ? 'selected="selected"' : '' }>[YT]
+            美亞特</option>
+        <option value="南非" ${memberVO.country=="南非" ? 'selected="selected"' : '' }>[ZA]
+            南非</option>
+        <option value="尚比亞" ${memberVO.country=="尚比亞" ? 'selected="selected"' : '' }>[ZM]
+            尚比亞</option>
+        <option value="辛巴威" ${memberVO.country=="辛巴威" ? 'selected="selected"' : '' }>[ZW]
+            辛巴威</option>
+    </select>

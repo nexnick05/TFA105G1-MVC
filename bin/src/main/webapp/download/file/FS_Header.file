@@ -1,0 +1,80 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@page import="redis.clients.jedis.Jedis"%>
+<header class="header transparent scroll-hide">
+			<!--Main Menu starts-->
+			<div class="site-navbar-wrap v2"
+				style="background-color: rgb(32, 69, 99)">
+				<div class="container">
+					<div class="site-navbar">
+						<div class="row align-items-center">
+							<div class="col-md-4 col-6">
+								<a class="navbar-brand" href="<%=request.getContextPath()%>/"><img
+									src="<%=request.getContextPath()%>/download/images/f.png" alt="logo" class="img-fluid"></a>
+							</div>
+							<div class="col-md-8 col-6">
+								<nav class="site-navigation float-left">
+									<div class="container">
+										<ul class="site-menu js-clone-nav d-none d-lg-block">
+											<li class="has-children"><a style="color: white"
+												href="<%=request.getContextPath()%>/">首頁</a></li>
+											<li class="has-children"><a style="color: white"
+												href="<%=request.getContextPath()%>/MVC/ProductDisplayController">產品分類</a>
+												<ul class="dropdown">
+													<li><a href="<%=request.getContextPath() %>/MVC/ProductDisplayController?type=一日遊">一日遊</a></li>
+													<li><a href="<%=request.getContextPath() %>/MVC/ProductDisplayController?type=多日遊">多日遊</a></li>
+													<li><a href="<%=request.getContextPath() %>/MVC/ProductDisplayController?type=包車">包車</a></li>
+													<li><a href="<%=request.getContextPath() %>/MVC/ProductDisplayController?type=熱門票卷">熱門票卷</a></li>
+													<li><a href="<%=request.getContextPath() %>/MVC/ProductDisplayController?type=獨特體驗">獨特體驗</a></li>
+												</ul></li>
+											<li class="has-children"><a style="color: white"
+												href="#">關於我們</a></li>
+											<li class="has-children"><a style="color: white"
+												href="<%=request.getContextPath()%>/download/FS-my-profile.jsp">會員專區</a></li>
+											<li class="has-children"><a style="color: white"
+												href="<%=session.getAttribute("memberVO") == null ? request.getContextPath() + "/download/FS-login.jsp"
+		: request.getContextPath() + "/member/member.login?action=logout"%>"><%=session.getAttribute("memberVO") == null ? "登入/註冊" : "登出"%></a>
+											</li>
+											<li class="d-lg-none"><a class="btn v1"
+												href="add-listing.html">Add Listing <i
+													class="ion-plus-round"></i></a></li>
+										</ul>
+									</div>
+								</nav>
+								<div class="d-lg-none sm-right">
+									<a href="#" class="mobile-bar js-menu-toggle"> <span
+										class="ion-android-menu"></span>
+									</a>
+								</div>
+								<% 
+									Jedis jedis = new Jedis("localhost", 6379);
+									long xx = 0;
+									if(session.getAttribute("memberid")!=null){
+										Integer memberid = (Integer)session.getAttribute("memberid");
+										String memberidstring = String.valueOf(memberid);
+										xx = jedis.llen("會員"+memberidstring);									
+									}						
+									
+									jedis.close();								
+								
+								%>
+								<div class="add-list float-right">
+									<a class="btn v8" href="<%= request.getContextPath() %>/MVC/ShoppingCart">購物車 <i
+										class="icofont-shopping-cart">&nbsp<span class='cartqty'><%=xx %></span></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--mobile-menu starts -->
+					<div class="site-mobile-menu">
+						<div class="site-mobile-menu-header">
+							<div class="site-mobile-menu-close  js-menu-toggle">
+								<span class="ion-ios-close-empty"></span>
+							</div>
+						</div>
+						<div class="site-mobile-menu-body"></div>
+					</div>
+					<!--mobile-menu ends-->
+				</div>
+			</div>
+			<!--Main Menu ends-->
+		</header>
